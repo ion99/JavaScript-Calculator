@@ -1,0 +1,22 @@
+{
+  "name": "javascript-calculator",
+  "version": "1.0.0",
+  "description": "You can add, subtract, multiply and divide two numbers. You can clear the input field with a clear button. You can keep chaining mathematical operations together until you hit the equal button, and the calculator will tell you the correct output. You can undo the last number and operator.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ion99/JavaScript-Calculator.git"
+  },
+  "author": "Ion Gorincioi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ion99/JavaScript-Calculator/issues"
+  },
+  "homepage": "https://github.com/ion99/JavaScript-Calculator#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
