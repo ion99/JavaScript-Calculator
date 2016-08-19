@@ -91,27 +91,27 @@ $(document).ready(function(){
     
   })
   
-  // $(".percent").click(function(){
-  //   if (number !== "") totalResult.push(number);
-  //   console.log(totalResult);
-  //   let percent = totalResult.map(function(val){
-  //     if (parseFloat(val)){
-  //       return parseFloat(val);
-  //     } else if (val === "+"){
-  //       return "+";
-  //     } else if (val === "−"){
-  //       return "-";
-  //     } else if (val === "×"){
-  //       return "*";
-  //     } else if (val === "÷"){
-  //       return "/";
-  //     }
-  //   })
-  //   result = eval(percent.join(""))/100;
-  //   total.text(testNumLength(result + ""));
-  //   totalResult = [];
-  //   totalResult.push(result);
-  // })
+  $(".percent").click(function(){
+    if (number !== "") totalResult.push(number);
+    console.log(totalResult);
+    let percent = totalResult.map(function(val){
+      if (parseFloat(val)){
+        return parseFloat(val);
+      } else if (val === "+"){
+        return "+";
+      } else if (val === "−"){
+        return "-";
+      } else if (val === "×"){
+        return "*";
+      } else if (val === "÷"){
+        return "/";
+      }
+    })
+    result = eval(percent.join(""))/100;
+    total.text(testNumLength(result + ""));
+    totalResult = [];
+    totalResult.push(result);
+  })
   $("#equals").click(function(){
     total.text(testNumLength(result + ""));
     if (number !== "") totalResult.push(number);
